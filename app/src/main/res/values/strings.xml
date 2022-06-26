@@ -18,4 +18,5 @@
     <string name="_minus">-</string>
     <string name="_multiply">*</string>
     <string name="_divider">/</string>
+    <string name="background">background</string>
 </resources>

@@ -6,13 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/top_margin_text_result"
+        android:layout_marginTop="@dimen/top_margin_text_result"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_result"
+        tools:text="0.7777777777" />
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:alpha="0.4"
+        android:contentDescription="@string/background"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/ic_back" />
 
@@ -27,6 +38,7 @@
 
         <Button
 
+            android:id="@+id/key_7"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,6 +49,7 @@
 
         <Button
 
+            android:id="@+id/key_8"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,6 +60,7 @@
 
 
         <Button
+            android:id="@+id/key_9"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,19 +71,20 @@
 
 
         <Button
+            android:id="@+id/key_mult"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_keys"
             android:text="@string/_multiply"
             android:textColor="@color/accent"
-            android:textSize="@dimen/key_size"
 
-            />
+            android:textSize="@dimen/key_size" />
 
 
         <Button
 
+            android:id="@+id/key_4"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,6 +95,7 @@
 
         <Button
 
+            android:id="@+id/key_5"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,6 +106,7 @@
 
 
         <Button
+            android:id="@+id/key_6"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,6 +116,7 @@
             android:textSize="@dimen/key_size" />
 
         <Button
+            android:id="@+id/key_minus"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,6 +127,7 @@
 
         <Button
 
+            android:id="@+id/key_1"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -119,6 +138,7 @@
 
         <Button
 
+            android:id="@+id/key_2"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -129,6 +149,7 @@
 
 
         <Button
+            android:id="@+id/key_3"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -138,6 +159,7 @@
             android:textSize="@dimen/key_size" />
 
         <Button
+            android:id="@+id/key_plus"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,6 +170,7 @@
 
         <Button
 
+            android:id="@+id/key_0"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -157,6 +180,7 @@
             android:textSize="@dimen/key_size" />
 
         <Button
+            android:id="@+id/key_dot"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -166,6 +190,7 @@
             android:textSize="@dimen/key_size" />
 
         <Button
+            android:id="@+id/key_div"
             style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
