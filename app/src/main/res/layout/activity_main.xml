@@ -10,14 +10,9 @@
 
     <TextView
         android:id="@+id/text_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/top_margin_text_result"
-        android:layout_marginTop="@dimen/top_margin_text_result"
-        android:textAlignment="textEnd"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_result"
-        tools:text="0.7777777777" />
+        tools:text="0.7777777777"
+        style="@style/Tablo"
+        />
 
     <ImageView
         android:layout_width="match_parent"
@@ -35,182 +30,86 @@
         app:columnCount="4"
         app:useDefaultMargins="true">
 
-
         <Button
-
             android:id="@+id/key_7"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_7"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton"
+            android:text="@string/_7" />
 
         <Button
-
             android:id="@+id/key_8"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_8"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
-
+            style="@style/CalcButton"
+            android:text="@string/_8" />
 
         <Button
             android:id="@+id/key_9"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_9"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
-
+            style="@style/CalcButton"
+            android:text="@string/_9" />
 
         <Button
             android:id="@+id/key_mult"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_multiply"
-            android:textColor="@color/accent"
-
-            android:textSize="@dimen/key_size" />
-
+            style="@style/CalcButton.OperationButton"
+            android:text="@string/_multiply" />
 
         <Button
-
             android:id="@+id/key_4"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_4"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton"
+            android:text="@string/_4" />
 
         <Button
-
             android:id="@+id/key_5"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_5"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
-
+            style="@style/CalcButton"
+            android:text="@string/_5" />
 
         <Button
             android:id="@+id/key_6"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_6"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton"
+            android:text="@string/_6" />
 
         <Button
             android:id="@+id/key_minus"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/_minus"
-            android:textColor="@color/accent"
-            android:textSize="@dimen/key_size" />
-
+            style="@style/CalcButton.OperationButton"
+            android:text="@string/_minus" />
 
         <Button
-
             android:id="@+id/key_1"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_1"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton"
+            android:text="@string/_1" />
 
         <Button
-
             android:id="@+id/key_2"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_2"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
-
+            style="@style/CalcButton"
+            android:text="@string/_2" />
 
         <Button
             android:id="@+id/key_3"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_3"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton"
+            android:text="@string/_3" />
 
         <Button
             android:id="@+id/key_plus"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_plus"
-            android:textColor="@color/accent"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton.OperationButton"
+            android:text="@string/_plus" />
 
         <Button
-
             android:id="@+id/key_0"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_0"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton"
+            android:text="@string/_0" />
 
         <Button
             android:id="@+id/key_dot"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_dot"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/key_size" />
+            style="@style/CalcButton"
+            android:text="@string/_dot" />
 
         <Button
             android:id="@+id/key_div"
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:text="@string/_divider"
-            android:textColor="@color/accent"
-            android:textSize="@dimen/key_size" />
-
+            style="@style/CalcButton.OperationButton"
+            android:text="@string/_divider" />
 
         <Button
-            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_keys"
-            android:backgroundTint="@color/accent"
+            style="@style/CalcButton.OperationButton"
+            android:backgroundTint="@color/red"
             android:text="@string/_equals"
-            android:textColor="@color/white"
-            android:textSize="@dimen/key_size" />
-
-
+            android:textColor="@color/white" />
     </androidx.gridlayout.widget.GridLayout>
 
 </FrameLayout>
