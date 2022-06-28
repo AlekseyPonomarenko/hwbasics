@@ -2,4 +2,6 @@
 <resources>
     <dimen name="key_size">34sp</dimen>
     <dimen name="margin_keys">10dp</dimen>
+    <dimen name="top_margin_text_result">25dp</dimen>
+    <dimen name="text_size_result">48sp</dimen>
 </resources>
