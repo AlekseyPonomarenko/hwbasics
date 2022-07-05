@@ -1,11 +1,24 @@
 package ru.ponomarenko.hwbasics.ui;
 
+import java.text.DecimalFormat;
+
+import ru.ponomarenko.hwbasics.model.Calculator;
 import ru.ponomarenko.hwbasics.model.CalculatorImpl;
+import ru.ponomarenko.hwbasics.model.Operator;
 
 public class CalculatorPresenter {
 
-    private final CalculatorView view; //главная view
-    private final CalculatorImpl calculator; //управляющий объект
+    private final DecimalFormat formater = new DecimalFormat("#.##");
+
+    private final CalculatorView view;
+    private final Calculator calculator;
+
+    private double argOne;
+
+    private Double argTwo;
+
+    private Operator selectedOperator;
+
 
     /**
      * Конструктор
@@ -22,31 +35,45 @@ public class CalculatorPresenter {
      */
     public void onDotPressed() {
 
-        showResult();
 
     }
 
     /**
      * При нажатии на кнопку с числом
      */
-    public void onDigitPressed() {
-        showResult();
+    public void onDigitPressed(int digit) {
+        if (argTwo == null) {
+
+            argOne = argOne * 10 + digit;
+
+            showFormatted(argOne);
+        } else {
+            argTwo = argTwo * 10 + digit;
+
+            showFormatted(argTwo);
+
+        }
     }
 
     /**
      * При выборе оператора
      */
-    public void onOperatorPressed() {
-        showResult();
+    public void onOperatorPressed(Operator operator) {
+        if (selectedOperator != null) {
+
+            argOne = calculator.perform(argOne, argTwo, selectedOperator);
+
+            showFormatted(argOne);
+        }
+
+        argTwo = 0.0;
+
+        selectedOperator = operator;
     }
 
-    /**
-     * Отразить результат
-     */
-    private void showResult(){
 
-        view.showResult("Hello");
-
+    private void showFormatted(double value) {
+        view.showResult(formater.format(value));
     }
 
 }

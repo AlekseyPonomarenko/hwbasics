@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CalcButton" parent="Widget.Material3.Button.TextButton.Dialog.Flush">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_keys</item>
+        <item name="android:textColor">@color/teal</item>
+        <item name="android:textSize">@dimen/key_size</item>
+    </style>
+
+    <style name="CalcButton.OperationButton">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Tablo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">@dimen/top_margin_text_result</item>
+        <item name="android:layout_marginTop">@dimen/top_margin_text_result</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/teal</item>
+        <item name="android:textSize">@dimen/text_size_result</item>
+    </style>
+</resources>
